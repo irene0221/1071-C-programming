@@ -15,7 +15,7 @@ int main(){
     switch(choice)
     {
       case 1:
-          printf("Enter height and width");
+          printf("Enter height and width:");
           scanf("%d %d",&height, &width);
           for(i=1;i<=height;i++){
             for(j=1;j<=width;j++){
@@ -68,7 +68,21 @@ int main(){
         }
 
         break;
+        }else
+        if(type==4){
+          for(i=1;i<=height;i++){
+            for(j=height;j>=1;j--){
+               if(i==height || i==j || j==1)
+                    printf("*");
+                else
+                    printf(" ");
+            }
+            printf("\n");
         }
+
+        break;
+        }
+
 
 
 
@@ -80,3 +94,4 @@ int main(){
 
 
 }
+
