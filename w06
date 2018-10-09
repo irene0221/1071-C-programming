@@ -1,0 +1,102 @@
+#include <stdio.h>
+
+int main(){
+     int a,b,x1,x2,x3,x4,x5;
+     printf("Enter two intergers:");
+     scanf("%d %d",&a,&b);
+     if(a>=0){
+     x1 =  a + b;
+     x2 =  a - b;
+     x3 =  a * b;
+     x4 =  a / b;
+     x5 =  a % b;}
+     printf("%d + %d = %d\n%d - %d = %d\n%d * %d = %d\n%d / %d = %d\n%d %% %d = %d",a,b,x1,a,b,x2,a,b,x3,a,b,x4,a,b,x5);
+     return 0;
+
+
+
+
+
+}
+
+
+
+
+
+#include <stdio.h>
+
+
+
+int main(){
+    int h1,h2;
+    float w1,w2,i;
+    printf("Enter height (-1 to exit):");
+    scanf("%d %d",&h1,&h2);
+
+
+
+           while(h1>=0 && h2>=0){
+            for(int i=h1;i<=h2 ;i++){
+                w1=18.5*i/100.0*i/100.0;
+                w2=24*i/100.0*i/100.0;
+                printf("%d cm:%.1f ~ %.1f (kg)",i,w1,w2);
+                printf("\n");
+                }
+
+
+                printf("Enter height (-1 to exit):");
+                scanf("%d %d",&h1,h2);
+
+
+
+
+     }
+
+
+
+   return 0;
+
+    }
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+
+void Prchar(char c,int n){
+    for(int i=1; i<=n; i++){
+        printf("%c", c);
+    }
+}
+
+int main(){
+   int height=0,ID;
+
+
+   if(height==-1){
+     printf("Enter height (-1 to exit):");
+     scanf("Bye! coding by yourID",ID);
+    }
+    else{
+        printf("Enter height (-1 to exit):");
+        scanf("%d",&height);
+        for(int i=1;i<=height;i++){
+
+            Prchar(' ',height-i);
+            Prchar('*',i);
+            Prchar(' ',2);
+            Prchar('*',i);
+            printf("\n");
+       }
+
+
+     }
+
+     return 0;
+
+}
